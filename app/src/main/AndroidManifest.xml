@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.co.telkomsigma.mybirawa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mybirawa_square"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_mybirawa_circle"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".controller.home.beranda.perangkat.puchlistSupervisor.ContohFABActivity"
+            android:label="@string/title_activity_contoh_f_a_b"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".controller.home.beranda.perangkat.punchlistTeknisi.detail.DetailPuchlistActivity" />
+        <activity android:name=".controller.home.beranda.perangkat.punchlistTeknisi.PunchlistTeknisiActivity" />
+        <activity android:name=".controller.home.beranda.penilaianGedung.PenilaianGedungActivity" />
+        <activity android:name=".controller.home.beranda.perangkat.ItemDetailPerangkatActivity" />
+        <activity android:name=".controller.home.beranda.perangkat.DetailChecklistActivity" />
+        <activity android:name=".controller.home.beranda.perangkat.PerangkatActivity" />
+        <activity
+            android:name=".controller.home.beranda.history.DetailHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.inbox.DetailInboxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.home.beranda.help.FaqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.home.beranda.help.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.statusTiket.detailTiketHelpDesk.DetailTiketHelpdeskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.home.beranda.history.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.home.beranda.formisian.FormulirIsianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.statusTiket.Rating.RatingTiketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.statusTiket.UlangTicket.UlangTiketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.statusTiket.detailTiket.DetailTiketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.statusTiket.StatusTiketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.register.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_mybirawa_circle" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service android:name=".util.MyFirebaseMassagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".controller.login.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".controller.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".controller.splashscreen.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.onboarding.OnboardingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar" />
+    </application>
+
+</manifest>

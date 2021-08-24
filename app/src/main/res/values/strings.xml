@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">MyBirawa</string>
+
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="notification_channel_name">reminder</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="btn_masuk">masuk</string>
+    <string name="btn_daftar">daftar</string>
+    <string name="edt_email">Masukan Email</string>
+    <string name="edt_password">Masukan Password</string>
+    <string name="edt_no_hp">Nomor HP</string>
+    <string name="text_lupa_kata_sandi">Lupa kata sandi ?</string>
+    <string name="text_ingat_saya">ingat saya</string>
+    <string name="text_belum_punya_akun">Belum punya akun ?</string>
+    <string name="text_daftar_disini">Daftar disini</string>
+    <string name="txt_tittle_lupa_password">Silakan masukkan alamat email Anda yang telah terdaftar</string>
+    <string name="btn_txt_forget_password">Atur Ulang Kata sandi</string>
+
+    <!-- Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_pendaftaran_register">Pendaftaran</string>
+    <string name="txt_masukan_data_diri_anda_register">Masukan data diri anda</string>
+    <string name="content_description_step_one">step one</string>
+    <string name="btn_lanjut">Lanjut</string>
+    <string name="btn_kembali">Kembali</string>
+    <string name="edt_unit_kerja_perusahaan">Unit Kerja / Perusahaan</string>
+    <string name="edt_kota">Kota</string>
+    <string name="edt_alamat_lengkap">Alamat Lengkap</string>
+    <string name="edt_nama_unit_kerja_perusahaan">Sub Unit Kerja / Perusahaan</string>
+
+
+    <string name="start_text_advice">By continuing on this application you agree to our Terms of Use and Privacy Policy</string>
+    <string name="start">START</string>
+
+    <string name="text_tittle_onboarding_1">Selamat datang</string>
+    <string name="text_description_onboarding_1"><![CDATA[Kini Anda bisa memantau tiket informasi, pengaduan & permintaan dalam satu aplikasi.]]></string>
+
+    <string name="text_tittle_onboarding_2">Pantau Di Mana Saja</string>
+    <string name="text_description_onboarding_2">Dalam segala situasi dan kondisi, semua perihal tiket Anda ada dalam genggaman</string>
+
+    <string name="text_tittle_onboarding_3">Mudah dan Nyaman</string>
+    <string name="text_description_onboarding_3">Semua bisa dilakukan kapan pun tanpa khawatir mengganggu aktivitas lain</string>
+    <string name="edt_buat_kata_sandi_register">Buat Kata Sandi</string>
+    <string name="edt_ulang_kata_sandi_register">Ulang Kata Sandi</string>
+    <string name="edt_nama_lengkap">Nama Lengkap</string>
+
+    <!--    error handle text -->
+    <string name="ERROR_FIELD_REQUIRED">Field tidak boleh kosong</string>
+    <string name="ERROR_FIELD_DIGIT_ONLY">Hanya boleh terisi numerik</string>
+    <string name="ERROR_FIELD_EMAIL_IS_NOT_VALID">Email tidak valid</string>
+    <string name="ERROR_FIELD_PASWWORD_LENGH_TOO_SHORT">Alamat tidak boleh kurang dari 5 karakter </string>
+    <string name="ERROR_FIELD_NAME_LENGH_TOO_SHORT">Nama tidak boleh kurang dari 5 karakter </string>
+    <string name="ERROR_FIELD_NAME_LENGH_MAX">Nama tidak boleh bebih dari 50 karakter </string>
+    <string name="ERROR_FIELD_PHONE_NUMBER_LENGH_TOO_SHORT">Nomor Telephone tidak boleh kurang dari 10 Angka </string>
+    <string name="ERROR_FIELD_PHONE_NUMBER_LENGH_TOO_MANY">Nomor Telephone tidak boleh Lebih dari 13 Angka </string>
+    <string name="ERROR_FIELD_PASWWORD_PATTERN_IS_NOT_VALID">Kata sandi harus perpaduan huruf dan angka</string>
+    <string name="ERROR_FIELD_PASWWORD_MATCH_NOT_VALID">Kata sandi tidak sama </string>
+    <string name="ERROR_FIELD_PASWWORD_LENGH_NOT_VALID">Kata sandi minimal 6 karakter</string>
+    <string name="str_registrasi_berhasil">Registrasi Berhasil</string>
+    <string name="txt_beranda_tiket_aktif">Tiket Aktif</string>
+    <string name="txt_beranda_lihat_semua">Lihat semua</string>
+    <string name="title_activity_beranda">BerandaActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="txt_profile_home">Profile</string>
+    <string name="txt_beranda_home">Beranda</string>
+    <string name="txt_pesan_home">Pesan</string>
+    <string name="txt_inbox_pesan">Pesan</string>
+    <string name="txt_inbox_tidak_ada_pesan">Tidak Ada Pesan</string>
+    <string name="txt_inbox_anda_belum_memiliki_pesan_apapun">Anda belum memiliki pesan apapun</string>
+    <string name="txt_btn_ulangi">Ulangi</string>
+    <string name="txt_btn_kirim">Kirim</string>
+    <string name="txt_btn_close_ticket">Close Ticket</string>
+    <string name="txt_btn_reopen">Reopen</string>
+    <string name="txt_btn_batal">Batal</string>
+    <string name="txt_btn_ya">YA</string>
+    <string name="txt_konfirmasi">Konfirmasi</string>
+    <string name="txt_oke_button">OKE</string>
+    <string name="txt_coba_lagi_button">Coba Lagi</string>
+    <string name="txt_formulir_coba_periksa_kembali_koneksi_internet_anda">Coba Periksa kembali Koneksi Internet anda</string>
+    <string name="txt_formulir_tidak_ada_jaringan">Tidak Ada Jaringan</string>
+    <string name="txt_history_tidak_ada_riwayat">Tidak Ada Riwayat</string>
+    <string name="txt_history_anda_belum_punya_tiket_yang_sudah_berakhir">Anda belum punya tiket yang sudah berakhir</string>
+    <string name="text_detailtiket_laporan_hasil_pekerjaan">Laporan Hasil Pekerjaan</string>
+    <string name="text_detailtiket_hint_contoh_perangkat_mengalami_kerusakan_onderdil_sudah_diganti_baru_dan_berjalan_normal_kembali">Contoh : Perangkat mengalami kerusakan, onderdil sudah diganti baru dan berjalan normal kembali.</string>
+    <string name="text_button_proses_tiket">Proses Tiket</string>
+    <string name="txt_detailtiket_pengaduan">Pengaduan</string>
+    <string name="txt_detailtiket_masalah">Masalah</string>
+    <string name="txt_detailtiket_pic_teknisi">PIC/Teknisi</string>
+    <string name="tittle_detailtiket_progress_status">Progress Status</string>
+    <string name="txt_upload_foto_helpdesk">Upload Foto</string>
+    <string name="text_button_laporan_selesai">Laporan Selesai</string>
+    <string name="txt_beranda_information">Information</string>
+    <string name="txt_beranda_reservasi">Reservasi</string>
+    <string name="txt_beranda_pengaduan">Pengaduan</string>
+    <string name="txt_beranda_riwayat">Riwayat</string>
+    <string name="txt_help_pusat_layanan_mybirawa">Pusat layanan MyBirawa</string>
+    <string name="txt_help_hubungi_kami">Hubungi Kami</string>
+    <string name="txt_help_kirim_email">Kirim Email</string>
+    <string name="txt_help_faq">FAQ</string>
+    <string name="txt_help_faq_pertanyaan_yang_di_tanyakan">Pertanyaan yang di tanyakan</string>
+    <string name="txt_help_ganti_bahasa_aplikasi">Ganti Bahasa Aplikasi</string>
+    <string name="txt_help_pilih_bahasa_indonesia_atau_inggris">Pilih bahasa Indonesia atau Inggris</string>
+    <string name="txt_help_versi_aplikasi">Versi Aplikasi</string>
+    <string name="txt_help_version">v 1.0.0</string>
+    <string name="txt_spinner_formisian_gedung">Gedung</string>
+    <string name="txt_spinner_formisian_bidang">Bidang</string>
+    <string name="txt_spinner_formisian_masalah">Masalah</string>
+    <string name="txt_keluar">Keluar</string>
+    <string name="txt_logout_message">Apakah anda yakin keluar dari aplikasi?</string>
+    <string name="txt_spinner_dialog_tittle">Select item :</string>
+    <string name="txt_profile_email">Email</string>
+    <string name="txt_profile_telephone">Telephone</string>
+    <string name="txt_profile_unit_kerja">Unit Kerja/Perusahaan</string>
+    <string name="txt_profile_bantuan">Bantuan</string>
+    <string name="txt_forgotpassword_tittle">Atur Ulang Kata Sandi Berhasil</string>
+    <string name="txt_forgotpassword_description">Segera periksa email Anda, tautan untuk mengatur ulang kata sandi telah dikirimkan</string>
+    <string name="txt_proses_ticket">Proses Ticket</string>
+    <string name="txt_berikan_ulasan">Berikan Ulasan</string>
+    <string name="txt_contoh_pekerjaan_bagus_terima_kasih">contoh : Pekerjaan bagus , terima kasih.</string>
+    <string name="txt_bagaimana_pelayanan_dan_pekerjaan_kami">Bagaimana pelayanan dan pekerjaan kami ?</string>
+    <string name="txt_berikan_alasan_pengerjaan_ulang_tiket">Berikan Alasan Pengerjaan Ulang Tiket ...</string>
+    <string name="txt_beranda_berita">Berita</string>
+    <string name="txt_tidak_ada_berita">Tidak ada Berita</string>
+    <string name="txt_ganti_foto_detail_helpdesk">Ganti Foto</string>
+    <string name="txt_waktu_pilihan_checklist">Waktu Pilihan</string>
+    <string name="txt_pilih_waktu_checklist">Pilih Waktu</string>
+    <string name="txt_pilih_gedung_checklist">Pilih Gedung</string>
+    <string name="txt_area_penilaian_gedung">Area</string>
+    <string name="txt_pilih_penilaian_gedung">Pilih Area</string>
+    <string name="txt_witel_penilaian_perangkat">Witel</string>
+    <string name="txt_pilih_witel_penilaian_perangkat">Pilih Witel</string>
+    <string name="txt_kelas_penialian_gedung">Kelas</string>
+    <string name="txt_pilih_kelas_penilaian_gedung">Pilih Kelas</string>
+    <string name="txt_gedung_penilaian_perangkat">Gedung</string>
+    <string name="ERROR_FIELD_ADDRESS_LENGH_MAX">Alamat tidak boleh lebih dari 200 karakter</string>
+    <string name="txt_desc_pekerjaan_punchlist">Contoh : Perangkat mengalami kerusakan, onderdil sudah diganti baru dan berjalan normal kembali.</string>
+    <string name="txt_deskripsi_pekerjaan_punchlist">Deskripsi Pekerjaan</string>
+    <string name="txt_nama_perangkat_punchlist">Nama Perangkat</string>
+    <string name="txt_keluhan_punchlist">Keluhan</string>
+    <string name="title_activity_contoh_f_a_b">ContohFABActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="txt_upload_foto_pekerjaan_detail_status_ticket">Upload foto pekerjaan ...</string>
+    <string name="txt_penilaian_dan_ulasan_anda_rating">Penilaian dan Ulasan Anda</string>
+</resources>

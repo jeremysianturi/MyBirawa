@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:context=".controller.statusTiket.detailTiket.DetailTiketActivity"
+    tools:ignore="ContentDescription">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/map_24_regular" />
+
+                <TextView
+                    android:id="@+id/tvDetailNoTiket"
+                    style="@style/textview_tittle_item_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                    app:layout_constraintStart_toEndOf="@+id/imageView11"
+                    app:layout_constraintTop_toTopOf="@+id/imageView11"
+                    tools:text="MYB6871723" />
+
+                <TextView
+                    android:id="@+id/tvStatusTicket"
+                    style="@style/textview_tittle_item_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/background_rounded_all_red_opacity"
+                    android:padding="@dimen/margin_4dp"
+                    android:textColor="@color/red_status_tiket"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView11"
+                    tools:text="Berakhir" />
+
+                <TextView
+                    android:id="@+id/tvDetailAddress"
+                    style="@style/textview_sub_tittle_universal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView11"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                    tools:text="Menara Multimedia" />
+
+                <TextView
+                    android:id="@+id/tvDetailAddress2"
+                    style="@style/textview_sub_tittle_universal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/margin_8dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/tvDetailAddress"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDetailAddress"
+                    tools:text="Menara Multimedia
+Jl. Kebon Sirih No. 45, Jakarta Pusat" />
+
+                <View
+                    android:id="@+id/line_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@color/md_grey_200"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDetailAddress2" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_view1"
+                    app:srcCompat="@drawable/settings_24_regular" />
+
+                <TextView
+                    android:id="@+id/tvDetailBidang"
+                    style="@style/textview_tittle_item_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView12"
+                    app:layout_constraintTop_toTopOf="@+id/imageView12"
+                    tools:text="M/E" />
+
+                <View
+                    android:id="@+id/line_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@color/md_grey_200"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDetailBidang" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_view2"
+                    app:srcCompat="@drawable/important_24_regular" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    style="@style/textview_tittle_item_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/txt_detailtiket_masalah"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView13"
+                    app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+                <TextView
+                    android:id="@+id/tvDetailMasalah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                    tools:text="Plafon bolong" />
+
+                <View
+                    android:id="@+id/line_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@color/md_grey_200"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDetailMasalah" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_view3"
+                    app:srcCompat="@drawable/megaphone_24_regular" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    style="@style/textview_tittle_item_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/txt_detailtiket_pengaduan"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView14"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <TextView
+                    android:id="@+id/tvDetailDescription"
+                    style="@style/textview_sub_tittle_universal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView14"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                    tools:text="Plafon Ruang rapat belakang di TSO Lt. 14 bolong, mohon segera diperbaiki." />
+
+                <View
+                    android:id="@+id/line_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@color/md_grey_200"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDetailDescription" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_view4"
+                    app:srcCompat="@drawable/incoming_video_24_regular" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    style="@style/textview_tittle_item_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/txt_detailtiket_pic_teknisi"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                    app:layout_constraintStart_toEndOf="@+id/imageView15"
+                    app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+                <TextView
+                    android:id="@+id/tvDetailPic"
+                    style="@style/textview_sub_tittle_universal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView15"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                    tools:text="Cahyono Putro" />
+
+                <ImageView
+                    android:id="@+id/imgCallHistory"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvDetailPic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView15"
+                    app:srcCompat="@drawable/call" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView29"
+            style="@style/textview_tittle_item_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tittle_detailtiket_progress_status"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <LinearLayout
+            android:id="@+id/ln_progress_tiket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+            <com.transferwise.sequencelayout.SequenceLayout
+                android:id="@+id/sequenceLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:progressBackgroundColor="@color/grey_line_background_color"
+                app:progressForegroundColor="@color/md_green_A700">
+
+            </com.transferwise.sequencelayout.SequenceLayout>
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTittleHasil"
+            style="@style/textview_tittle_item_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_detailtiket_laporan_hasil_pekerjaan"
+            app:layout_constraintEnd_toEndOf="@+id/ln_progress_tiket"
+            app:layout_constraintStart_toStartOf="@+id/ln_progress_tiket"
+            app:layout_constraintTop_toBottomOf="@+id/ln_progress_tiket" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/tvTittleHasil"
+            app:layout_constraintStart_toStartOf="@+id/tvTittleHasil"
+            app:layout_constraintTop_toBottomOf="@+id/tvTittleHasil"
+            app:srcCompat="@drawable/onboard_2" />
+
+        <TextView
+            android:id="@+id/tvDescriptionHasilPekerjaan"
+            style="@style/textview_sub_tittle_universal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView24"
+            app:layout_constraintStart_toStartOf="@+id/imageView24"
+            app:layout_constraintTop_toBottomOf="@+id/imageView24"
+            tools:text="Ada plafon bocor akibat tikus" />
+
+        <TextView
+            android:id="@+id/tvTittleRating"
+            style="@style/textview_tittle_item_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/txt_penilaian_dan_ulasan_anda_rating"
+            app:layout_constraintEnd_toEndOf="@+id/tvDescriptionHasilPekerjaan"
+            app:layout_constraintStart_toStartOf="@+id/tvDescriptionHasilPekerjaan"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescriptionHasilPekerjaan" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:isIndicator="true"
+            android:rating="5"
+            android:theme="@style/RatingBar"
+            app:layout_constraintEnd_toEndOf="@+id/tvTittleRating"
+            app:layout_constraintStart_toStartOf="@+id/tvTittleRating"
+            app:layout_constraintTop_toBottomOf="@+id/tvTittleRating" />
+
+        <TextView
+            android:id="@+id/tvUlasan"
+            style="@style/textview_sub_tittle_universal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_rounded_border_greyline"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvTittleRating"
+            app:layout_constraintStart_toStartOf="@+id/tvTittleRating"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar2"
+            tools:text="Perbaikan oke dan plafon bagus kembali, hanya saja sikap tukang kurang ramah. " />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

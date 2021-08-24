@@ -1,0 +1,259 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimaryRed</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryRed</item>
+    <item name="colorAccent">@color/md_grey_600</item>
+  </style>
+
+  <style name="AppThemeBeranda" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimaryRed</item>
+    <item name="colorPrimaryDark">#9D2C2B</item>
+    <item name="colorAccent">@color/md_grey_600</item>
+  </style>
+
+  <style name="AppTheme.NoActionbar" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="colorPrimary">@color/colorPrimaryRed</item>
+    <item name="colorPrimaryDark">#9D2C2B</item>
+    <item name="colorAccent">@color/md_grey_600</item>
+
+  </style>
+
+  <style name="ProgressBarPrimary" parent="android:Widget.ProgressBar.Horizontal">
+    <item name="android:indeterminateOnly">false</item>
+    <item name="android:progressDrawable">@drawable/progress_bar_color</item>
+    <item name="android:minHeight">10dip</item>
+    <item name="android:maxHeight">20dip</item>
+  </style>
+
+  // button style
+  <style name="button_background_red" parent="TextAppearance.AppCompat.Widget.Button">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/button_rounded</item>
+    <item name="android:fontFamily">@font/ubuntu_medium</item>
+    <item name="android:layout_marginStart">@dimen/margin_left_right_parent</item>
+    <item name="android:layout_marginEnd">@dimen/margin_left_right_parent</item>
+    <item name="android:foreground">?attr/selectableItemBackground</item>
+    <item name="android:clickable">true</item>
+  </style>
+
+  // button style
+  <style name="button_outline_border_red" parent="TextAppearance.AppCompat.Widget.Button">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@drawable/button_border</item>
+    <item name="android:fontFamily">@font/ubuntu_medium</item>
+    <item name="android:layout_marginStart">@dimen/margin_left_right_parent</item>
+    <item name="android:layout_marginEnd">@dimen/margin_left_right_parent</item>
+    <item name="android:foreground">?attr/selectableItemBackground</item>
+    <item name="android:clickable">true</item>
+  </style>
+
+  // button style
+  <style name="button_outline_border_red_help_activity" parent="TextAppearance.AppCompat.Widget.Button">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@drawable/outline_border_red_ovale</item>
+    <item name="android:fontFamily">@font/ubuntu_medium</item>
+    <item name="android:layout_marginStart">@dimen/margin_left_right_parent</item>
+    <item name="android:layout_marginEnd">@dimen/margin_left_right_parent</item>
+    <item name="android:foreground">?attr/selectableItemBackground</item>
+    <item name="android:clickable">true</item>
+  </style>
+
+  // button style
+  <style name="button_background_red_wrap_content" parent="TextAppearance.AppCompat.Widget.Button">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/ubuntu_medium</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/button_rounded</item>
+    <item name="android:layout_marginStart">@dimen/margin_left_right_parent</item>
+    <item name="android:layout_marginEnd">@dimen/margin_left_right_parent</item>
+    <item name="android:foreground">?attr/selectableItemBackground</item>
+    <item name="android:clickable">true</item>
+  </style>
+
+  <style name="textview_tittle" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/timmana</item>
+    <item name="android:text">@string/app_name</item>
+    <item name="android:textColor">@color/colorPrimaryRed</item>
+    <item name="android:textSize">@dimen/text_tittle_appname</item>
+  </style>
+
+  <style name="textview_tittle_register" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:text">@string/txt_pendaftaran_register</item>
+    <item name="android:textSize">@dimen/text_tittle</item>
+    <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+    <item name="android:layout_marginTop">24dp</item>
+    <item name="android:textColor">@color/black_text</item>
+  </style>
+
+  <style name="textview_tittle_universal" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/ubuntu_bold</item>
+    <item name="android:textSize">@dimen/text_tittle</item>
+    <item name="android:textColor">@color/black_text</item>
+  </style>
+
+  <style name="textview_text_tittle_universal" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/ubuntu_bold</item>
+    <item name="android:textSize">@dimen/text_subtittle</item>
+    <item name="android:textColor">@color/black_text</item>
+  </style>
+
+  <style name="textview_sub_tittle_universal" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/black_text</item>
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:lineSpacingMultiplier">1.2</item>
+    <item name="android:textSize">@dimen/text_medium</item>
+  </style>
+
+  <style name="textview_home_bottom_navigation" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textColor">@color/black_text</item>
+    <item name="android:textSize">@dimen/text_medium</item>
+  </style>
+
+  <style name="textview_sub_tittle_register" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:text">@string/txt_masukan_data_diri_anda_register</item>
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+    <item name="android:layout_marginTop">@dimen/margin_8dp</item>
+  </style>
+
+  <style name="text_tittle_login" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/timmana</item>
+    <item name="android:text">@string/app_name</item>
+    <item name="android:textColor">@color/colorPrimaryRed</item>
+    <item name="android:textSize">40sp</item>
+  </style>
+
+  <style name="edittext_email" parent="Widget.AppCompat.EditText">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:inputType">textEmailAddress</item>
+  </style>
+  <style name="edittext_person_name" parent="Widget.AppCompat.EditText">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:inputType">textPersonName</item>
+  </style>
+  <style name="edittext_password" parent="Widget.AppCompat.EditText">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:inputType">textPassword</item>
+  </style>
+  <style name="edittext_phone_number" parent="Widget.AppCompat.EditText">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:hint">@string/edt_no_hp</item>
+    <item name="android:inputType">phone</item>
+  </style>
+  <style name="edittext_multiline" parent="Widget.AppCompat.EditText">
+    <item name="android:gravity">top|start</item>
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:textColor">@color/black_text</item>
+    <item name="android:inputType">textMultiLine</item>
+    <item name="android:lineSpacingMultiplier">1.2</item>
+  </style>
+
+  <style name="textview_dropdown" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+    <item name="android:background">@drawable/background_rounded_all_edittext_grey</item>
+    <item name="android:paddingTop">5dp</item>
+    <item name="android:paddingBottom">5dp</item>
+    <item name="android:paddingStart">4dp</item>
+    <item name="android:paddingEnd">10dp</item>
+    <item name="android:layout_marginStart">20dp</item>
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:layout_marginEnd">20dp</item>
+    <item name="android:foreground">?attr/selectableItemBackground</item>
+    <item name="android:drawableEnd">@drawable/ic_keyboard_arrow_down_black_20dp</item>
+    <item name="android:fontFamily">@font/ubuntu_regular</item>
+    <item name="android:textColor">@color/black_text</item>
+    <item name="android:textSize">@dimen/text_medium</item>
+  </style>
+
+  <style name="textview_home_navigation" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="fontFamily">@font/ubuntu_bold</item>
+    <item name="android:textColor">@color/black_text</item>
+  </style>
+  
+  <style name="textview_tittle_item_profile" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:textSize">@dimen/text_medium</item>
+    <item name="fontFamily">@font/ubuntu_medium</item>
+    <item name="android:textColor">@color/black_text</item>
+  </style>
+
+  <!-- CardView item corner and shadow -->
+  <style name="cardview_item_list" parent="Widget.MaterialComponents.CardView">
+    <item name="cardUseCompatPadding">true</item>
+    <item name="cardCornerRadius">10dp</item>
+    <item name="elevation">2dp</item>
+    <item name="android:layout_marginBottom">@dimen/margin_8dp</item>
+  </style>
+  
+  <!--  ratingBar -->
+  <style name="RatingBar" parent="Widget.AppCompat.RatingBar">
+    <item name="colorControlNormal">@color/grey_line_background_color</item>
+    <item name="colorControlActivated">#fbaf18</item>
+  </style>
+
+<!--  bottom sheet dialog -->
+  <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+    <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+  </style>
+
+  <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+    <item name="android:background">@android:color/transparent</item>
+  </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<!--  spinner animation -->
+  <style name="DialogAnimations" />
+  <style name="DialogAnimations.SmileWindow">
+    <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+    <item name="android:windowExitAnimation">@anim/slide_out_top</item>
+  </style>
+</resources>

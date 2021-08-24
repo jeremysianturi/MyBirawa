@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".controller.inbox.DetailInboxActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgDetailInbox"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_detail_inbox"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_tittle_detail_inbox"
+                style="@style/textview_tittle_item_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                tools:text="Pembaruan Sistem"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgDetailInbox"
+                app:layout_constraintTop_toTopOf="@+id/imgDetailInbox" />
+
+            <TextView
+                android:id="@+id/tv_date_detail_inbox"
+                style="@style/textview_sub_tittle_universal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                tools:text="26 Apr, 08:56"
+                app:layout_constraintBottom_toBottomOf="@+id/imgDetailInbox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgDetailInbox"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tittle_detail_inbox" />
+
+            <TextView
+                style="@style/textview_sub_tittle_universal"
+                android:id="@+id/tv_isi_detail_inbox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                tools:text="Pemutakhiran sistem BE aplikasi akan dilaksanakan pada Selasa pukul 02:00 WIB. \nMohon maaf atas ketidaknyamanaan yang akan ditimbulkan. \nSementara waktu aplikasi tidak dapat berfungsi dengan baik sampai proses pembaruan selesai seluruhnya.   Jika Anda memerlukan bantuan darurat, silahkan hubungi Pusat Layanan MyBirawa di 147.  Sekian. Terima kasih."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgDetailInbox" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/message_detail_illustration"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

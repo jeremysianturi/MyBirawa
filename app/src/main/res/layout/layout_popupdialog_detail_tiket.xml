@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_rounded_top_white_padding"
+    android:paddingTop="@dimen/margin_16dp"
+    android:paddingStart="@dimen/margin_16dp"
+    android:paddingEnd="@dimen/margin_16dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/txt_tittle_popup"
+        android:gravity="start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_subtittle"
+        style="@style/textview_tittle_item_profile"
+        tools:text="@string/text_tittle_onboarding_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_subtittle_popup"
+        style="@style/textview_sub_tittle_universal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tittle_popup"
+        tools:text="@string/text_tittle_onboarding_2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50364965" />
+
+    <Button
+        android:id="@+id/btn_batal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_btn_batal"
+        style="@style/button_outline_border_red"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/txt_subtittle_popup"
+        app:layout_constraintTop_toBottomOf="@+id/txt_subtittle_popup" />
+
+    <Button
+        android:id="@+id/btn_ya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_btn_ya"
+        style="@style/button_background_red_wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/txt_subtittle_popup"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/txt_subtittle_popup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

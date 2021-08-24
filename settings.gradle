@@ -1,0 +1,2 @@
+rootProject.name='MyBirawa'
+include ':app'

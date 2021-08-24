@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "578996774404",
+    "firebase_url": "https://my-birawa.firebaseio.com",
+    "project_id": "my-birawa",
+    "storage_bucket": "my-birawa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578996774404:android:75d20741f976da39",
+        "android_client_info": {
+          "package_name": "id.co.gsd.mybirawa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578996774404-7phmasc8aq1if1a42q3vd7ljuv9ea0j8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.co.gsd.mybirawa",
+            "certificate_hash": "e8b8a8d89415d48ca9dbeda994fd2c732b55f38d"
+          }
+        },
+        {
+          "client_id": "578996774404-m54avnueoam9k989ptgroni29v2lph7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-xvqiwUDYj2iA7QmTgKsGWXUFYS154qk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578996774404-m54avnueoam9k989ptgroni29v2lph7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578996774404:android:5c3c52ee90482864187751",
+        "android_client_info": {
+          "package_name": "id.co.telkomsigma.mybirawa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578996774404-13kdmvu5mr0smi8u88dlqgagb4knbec9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.co.telkomsigma.mybirawa",
+            "certificate_hash": "3ce744d01c5b68e41f90a2d2eb0a2298a1476a6f"
+          }
+        },
+        {
+          "client_id": "578996774404-m54avnueoam9k989ptgroni29v2lph7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-xvqiwUDYj2iA7QmTgKsGWXUFYS154qk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578996774404-m54avnueoam9k989ptgroni29v2lph7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578996774404:android:9b70c06f6a422176187751",
+        "android_client_info": {
+          "package_name": "id.co.telkomsigma.myfirebasecloudmessaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578996774404-m54avnueoam9k989ptgroni29v2lph7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-xvqiwUDYj2iA7QmTgKsGWXUFYS154qk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578996774404-m54avnueoam9k989ptgroni29v2lph7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

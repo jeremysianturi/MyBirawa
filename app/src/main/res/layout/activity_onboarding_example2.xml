@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layout_info"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <com.rd.PageIndicatorView
+                android:id="@+id/pageIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                app:piv_animationType="scale"
+                app:piv_dynamicCount="true"
+                app:piv_interactiveAnimation="true"
+                app:piv_selectedColor="@color/colorPrimaryRed"
+                app:piv_unselectedColor="@color/md_grey_600"
+                app:piv_strokeWidth="2dp"
+                app:piv_viewPager="@id/viewPager"
+                app:piv_padding="8dp"
+                app:piv_radius="6dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background_rounded_top_white_padding"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btn_masuk"
+                style="@style/button_background_red"
+                android:text="@string/btn_masuk" />
+            <Button
+                android:id="@+id/btn_daftar"
+                style="@style/button_outline_border_red"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_daftar"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_policy_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="@color/md_grey_600"
+                android:gravity="center"
+                android:text="@string/start_text_advice"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>

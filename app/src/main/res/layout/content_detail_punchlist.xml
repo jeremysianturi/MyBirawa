@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/map_24_regular" />
+
+            <TextView
+                android:id="@+id/tvDetailNoTiket"
+                style="@style/textview_tittle_item_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="PL-0000001"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+            <TextView
+                android:id="@+id/tvStatusTicket"
+                android:textSize="@dimen/text_small"
+                style="@style/textview_tittle_item_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/background_rounded_all_red_opacity"
+                android:padding="@dimen/margin_4dp"
+                android:text="Belum"
+                android:textColor="@color/red_status_tiket"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvDetailAddress"
+                style="@style/textview_sub_tittle_universal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                tools:text="Menara Multimedia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView11"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvDetailAddress2"
+                style="@style/textview_sub_tittle_universal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/margin_8dp"
+                tools:text="Menara Multimedia
+Jl. Kebon Sirih No. 45, Jakarta Pusat"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailAddress"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailAddress" />
+
+            <View
+                android:id="@+id/line_view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:background="@color/md_grey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailAddress2" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_view1"
+                app:srcCompat="@drawable/ic_gedung_punchlist" />
+
+            <TextView
+                android:id="@+id/tvDetailBidang"
+                style="@style/textview_tittle_item_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="M/E"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+            <View
+                android:id="@+id/line_view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:background="@color/md_grey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailBidang" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_view2"
+                app:srcCompat="@drawable/ic_lantai_punchlist" />
+
+            <TextView
+                android:id="@+id/textView25"
+                style="@style/textview_tittle_item_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/txt_detailtiket_masalah"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvDetailMasalah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                tools:text="AC Rusak / Panas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+            <View
+                android:id="@+id/line_view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:background="@color/md_grey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailMasalah" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_view3"
+                app:srcCompat="@drawable/ic_perangkat_punchlist" />
+
+            <TextView
+                android:id="@+id/textView27"
+                style="@style/textview_tittle_item_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/txt_keluhan_punchlist"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvDetailDescription"
+                style="@style/textview_sub_tittle_universal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="4dp"
+                android:text="AC Ruang rapat belakang di Menara Multimedia Lt. 14 tidak berfungsi, mohon segera diperbaiki."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+
+            <View
+                android:id="@+id/line_view4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:background="@color/md_grey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailDescription" />
+
+            <ImageView
+                android:id="@+id/imgKeluhan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_view4"
+                app:srcCompat="@drawable/megaphone_24_regular" />
+
+            <TextView
+                android:id="@+id/tvkeluhan"
+                style="@style/textview_tittle_item_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/txt_keluhan_punchlist"
+                app:layout_constraintBottom_toBottomOf="@+id/imgKeluhan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgKeluhan"
+                app:layout_constraintTop_toTopOf="@+id/imgKeluhan" />
+
+            <TextView
+                android:id="@+id/tvDescKeluhan"
+                style="@style/textview_sub_tittle_universal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="4dp"
+                android:text="Perangkat mengalami kerusakan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imgKeluhan"
+                app:layout_constraintTop_toBottomOf="@+id/imgKeluhan" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutProgressStatus1"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        >
+
+        <TextView
+            android:id="@+id/tvDescPekerjaanPunchlist"
+            style="@style/textview_tittle_item_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/txt_deskripsi_pekerjaan_punchlist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/edt_helpdesk"
+            style="@style/edittext_multiline"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:gravity="top|start"
+            android:hint="@string/txt_desc_pekerjaan_punchlist"
+            app:layout_constraintEnd_toEndOf="@+id/tvDescPekerjaanPunchlist"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvDescPekerjaanPunchlist"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescPekerjaanPunchlist"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:paddingBottom="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_helpdesk">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@drawable/background_rounded_border_redline"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTittleUploadPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Upload foto pekerjaan ..."
+                    style="@style/textview_tittle_item_profile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.26999998" />
+
+                <LinearLayout
+                    android:padding="@dimen/margin_8dp"
+                    android:background="@drawable/background_rounded_border_redline"
+                    android:id="@+id/lyPickerPunchlist"
+                    android:weightSum="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTittleUploadPhoto"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:gravity="end"
+                        android:paddingEnd="@dimen/margin_8dp"
+                        android:paddingStart="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_baseline_add_photo_alternate_24">
+                        </ImageView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/textview_tittle_item_profile"
+                            android:text="@string/txt_upload_foto_helpdesk"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_result_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_name_image_helpdesk"
+                    android:ellipsize="start"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    tools:text="nama yaaa"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_result_photo"
+                    app:layout_constraintTop_toTopOf="@+id/img_result_photo"
+                    android:singleLine="true" />
+
+                <Button
+                    android:visibility="gone"
+                    style="@style/button_outline_border_red"
+                    android:id="@+id/btn_ganti_foto_helpdesk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_ganti_foto_detail_helpdesk"
+                    android:textColor="@color/black_text"
+                    android:paddingStart="@dimen/margin_4dp"
+                    android:paddingEnd="@dimen/margin_4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_result_photo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_result_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name_image_helpdesk" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btnLaporanSelesai"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/button_background_red"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:text="@string/txt_btn_kirim">
+            </Button>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

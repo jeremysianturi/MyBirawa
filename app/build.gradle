@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+
+androidExtensions {
+    experimental = true
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "id.co.telkomsigma.mybirawa"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1001
+        versionName "1.0.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+    }
+
+//    lintOptions {
+//        checkReleaseBuilds false
+//        // Or, if you prefer, you can continue to check for errors in release builds,
+//        // but continue the build even when errors are found:
+//        abortOnError false
+//    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.browser:browser:1.2.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //internal library
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0' // MVVM Architecture
+    annotationProcessor 'android.arch.lifecycle:common-java8:1.1.1' // MVVM Architecture
+    implementation 'androidx.cardview:cardview:1.0.0' // cardview
+    implementation 'com.google.android.material:material:1.2.0' // material design
+    implementation 'com.google.android.material:material:1.3.0-alpha02' // material design
+    implementation 'androidx.recyclerview:recyclerview:1.1.0' // recycleview
+    implementation 'com.google.firebase:firebase-messaging:20.2.4' // firebase messaging
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+
+//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5" // for sql lite database
+//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5" // for sql lite database
+    implementation "androidx.core:core-ktx:1.3.1" // core KTX
+    implementation "androidx.fragment:fragment-ktx:1.2.5"
+
+    //    external library
+    implementation 'de.hdodenhof:circleimageview:3.1.0'    // Circle image
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'    // JSON REQUEST
+    implementation 'com.github.bumptech.glide:glide:4.11.0' // image converter
+    implementation 'com.github.GrenderG:Toasty:1.4.2' //custom toast
+    implementation 'io.nlopez.smartlocation:library:3.3.3'     //smart location
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3@aar' // page indicator
+    implementation 'com.jaeger.statusbarutil:library:1.5.1' // status bar
+    implementation 'com.github.dhaval2404:android-form-validation:1.0' // form validation
+    implementation 'com.github.MdFarhanRaja:SearchableSpinner:1.9' // custom spinner
+    implementation 'com.github.transferwise:sequence-layout:1.0.11' // step progress view
+    implementation 'com.github.dhaval2404:imagepicker:1.7.1' // image picker library
+    implementation 'com.google.android.play:core:1.8.0'
+//    implementation 'com.jaredrummler:android-device-names:2.0.0'
+
+}

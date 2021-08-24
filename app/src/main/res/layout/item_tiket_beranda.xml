@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvItemParentBerandaTiket"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_4dp"
+        android:paddingTop="@dimen/margin_8dp"
+        android:paddingEnd="@dimen/margin_4dp"
+        android:paddingBottom="@dimen/margin_8dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="66dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="@dimen/margin_8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvItemSelesaiBeranda"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvItemTittleBeranda">
+
+            <LinearLayout
+                android:id="@+id/lnBackgroundGambar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="8dp"
+                tools:background="#b3cdd4ff">
+
+                <ImageView
+                    android:id="@+id/imgItemIconBeranda"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:srcCompat="@drawable/ic_test_settings" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tvItemTittleBeranda"
+            style="@style/textview_tittle_universal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sipil" />
+
+        <TextView
+            android:id="@+id/tvItemBaruBeranda"
+            style="@style/textview_sub_tittle_universal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tvitemBerjalanBeranda"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="@+id/tvitemBerjalanBeranda"
+            tools:text="Baru : 1" />
+
+        <TextView
+            android:id="@+id/tvitemBerjalanBeranda"
+            style="@style/textview_sub_tittle_universal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tvItemBaruBeranda"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemTittleBeranda"
+            tools:text="Berjalan : 1" />
+
+        <TextView
+            android:id="@+id/tvItemSelesaiBeranda"
+            style="@style/textview_sub_tittle_universal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvitemBerjalanBeranda"
+            app:layout_constraintStart_toEndOf="@+id/tvitemBerjalanBeranda"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemTittleBeranda"
+            tools:text="Selesai : 1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
